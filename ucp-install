@@ -1,0 +1,1 @@
+docker run --rm -it --name ucp -v /var/run/docker.sock:/var/run/docker.sock docker/ucp install -i -host-address <hostname/ip> --controller-port "port nummer
