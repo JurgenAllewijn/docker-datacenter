@@ -1,0 +1,10 @@
+Direction	Port	Purpose
+	in	443     (configurable)	web app and CLI client access to UCP.
+	in	2376    (configurable)	swarm manager accepts requests from UCP controller.
+	in	2375	heartbeat for nodes, to ensure they are running.
+	in	12376	proxy for TLS, provides access to UCP, Swarm, and Engine.
+	in	12379	internal node configuration, cluster configuration, and HA.
+	in	12380	internal node configuration, cluster configuration, and HA.
+	in	12381	proxy for TLS, provides access to UCP.
+	in	12382	manages TLS and requests from swarm manager.
+	out	80	send anonymous usage reports to Docker.
